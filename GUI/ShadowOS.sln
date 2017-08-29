@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowOS", "ShadowOS\ShadowOS.csproj", "{AB2AD1A6-8832-41E4-8A8D-AA93ACEDAAC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core.ui.data.wpf", "core.ui.data\core.ui.data.wpf.csproj", "{3D3BB2AF-B504-4EE9-9C5B-60D8982D6E15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core.ui.wpf", "core.ui\core.ui.wpf.csproj", "{035568C7-EEBC-4FAD-BD9E-C77588DF6A02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ciui (pronounced chewie)|Any CPU = ciui (pronounced chewie)|Any CPU
+		ciui|Any CPU = ciui|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB2AD1A6-8832-41E4-8A8D-AA93ACEDAAC3}.ciui (pronounced chewie)|Any CPU.ActiveCfg = ciui|Any CPU
+		{AB2AD1A6-8832-41E4-8A8D-AA93ACEDAAC3}.ciui (pronounced chewie)|Any CPU.Build.0 = ciui|Any CPU
+		{AB2AD1A6-8832-41E4-8A8D-AA93ACEDAAC3}.ciui|Any CPU.ActiveCfg = ciui|Any CPU
+		{AB2AD1A6-8832-41E4-8A8D-AA93ACEDAAC3}.ciui|Any CPU.Build.0 = ciui|Any CPU
+		{AB2AD1A6-8832-41E4-8A8D-AA93ACEDAAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2AD1A6-8832-41E4-8A8D-AA93ACEDAAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2AD1A6-8832-41E4-8A8D-AA93ACEDAAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2AD1A6-8832-41E4-8A8D-AA93ACEDAAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D3BB2AF-B504-4EE9-9C5B-60D8982D6E15}.ciui (pronounced chewie)|Any CPU.ActiveCfg = ciui|Any CPU
+		{3D3BB2AF-B504-4EE9-9C5B-60D8982D6E15}.ciui (pronounced chewie)|Any CPU.Build.0 = ciui|Any CPU
+		{3D3BB2AF-B504-4EE9-9C5B-60D8982D6E15}.ciui|Any CPU.ActiveCfg = ciui|Any CPU
+		{3D3BB2AF-B504-4EE9-9C5B-60D8982D6E15}.ciui|Any CPU.Build.0 = ciui|Any CPU
+		{3D3BB2AF-B504-4EE9-9C5B-60D8982D6E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3BB2AF-B504-4EE9-9C5B-60D8982D6E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3BB2AF-B504-4EE9-9C5B-60D8982D6E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D3BB2AF-B504-4EE9-9C5B-60D8982D6E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{035568C7-EEBC-4FAD-BD9E-C77588DF6A02}.ciui (pronounced chewie)|Any CPU.ActiveCfg = ciui|Any CPU
+		{035568C7-EEBC-4FAD-BD9E-C77588DF6A02}.ciui (pronounced chewie)|Any CPU.Build.0 = ciui|Any CPU
+		{035568C7-EEBC-4FAD-BD9E-C77588DF6A02}.ciui|Any CPU.ActiveCfg = ciui|Any CPU
+		{035568C7-EEBC-4FAD-BD9E-C77588DF6A02}.ciui|Any CPU.Build.0 = ciui|Any CPU
+		{035568C7-EEBC-4FAD-BD9E-C77588DF6A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{035568C7-EEBC-4FAD-BD9E-C77588DF6A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{035568C7-EEBC-4FAD-BD9E-C77588DF6A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{035568C7-EEBC-4FAD-BD9E-C77588DF6A02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

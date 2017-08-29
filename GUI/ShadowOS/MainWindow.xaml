@@ -1,0 +1,21 @@
+﻿<Window x:Class="ShadowOS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        Title="Shadow Logger" Height="350" Width="525"
+        MinHeight="650"
+        MinWidth="950"
+        WindowState="Normal"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent" 
+        
+        xmlns:local="clr-namespace:ShadowOS"
+        xmlns:cud="clr-namespace:core.ui.data;assembly=core.ui.data"
+        >
+    
+    <local:ShadowLogger />
+    
+</Window>

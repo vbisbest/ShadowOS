@@ -1,0 +1,16 @@
+﻿<Application x:Class="ShadowOS.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml"
+             xmlns:cud="clr-namespace:core.ui.data;assembly=core.ui.data"
+             xmlns:cu="clr-namespace:core.ui;assembly=core.ui">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <cud:Resources />
+                <cu:Resources />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
