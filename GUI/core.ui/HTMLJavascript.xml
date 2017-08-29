@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language id="HTMLJavascript">
+  <colors>
+    <color id="default" value="#000000"></color>
+    <color id="AttackSelection" value="#ffffff" background="#aa0000"></color>
+    <color id="HeaderName" value="#A00000"></color>
+    <color id="HeaderValue" value="#0000FF"></color>
+    <color id="Comment" value="#008000"></color>
+    <color id="Text" value="#202020"></color>
+    <color id="ElementName" value="#A00000"></color>
+    <color id="AttrName" value="#A00000"></color>
+    <color id="AttrValue" value="#000090"></color>
+    <color id="JSKeyword" value="#0000FF"></color>
+    <color id="JSComment" value="#008000"></color>
+    <color id="JSString" value="#800000"></color>
+  </colors>
+  <states>
+    <state id="HttpHeader" default="1">
+      <pattern>
+        <![CDATA[(?<HeaderName>^.*?:)(?<HeaderValue>.*?$)]]>
+      </pattern>
+      <pattern tostate="Html">
+        <![CDATA[(\n\n)|(\r\n\r\n)]]>
+      </pattern>
+    </state>
+    <state id="Html">
+      <pattern>
+        <![CDATA[(?<AttrName>[a-zA-Z]+)[ \t\r\n]*=[ \t\r\n]*(?<AttrValue>(".*?")|('.*?')|([#\.0-9a-zA-Z%]+))]]>
+      </pattern>
+      <pattern>
+        <![CDATA[<(?<ElementName>[/a-zA-Z0-9]*)]]>
+      </pattern>
+      <pattern>
+        <![CDATA[>(?<Text>.*?)<]]>
+      </pattern>
+      <pattern>
+        <![CDATA[(?<Comment><!--.*-->)]]>
+      </pattern>
+      <pattern tostate="Javascript" after="1">
+        <![CDATA[(?i)<script.*?>]]>
+      </pattern>
+    </state>
+    <state id="Javascript">
+      <pattern>
+        <![CDATA[(?i)[^A-Za-z0-9](?<JSKeyword>(var)|(function)|(new)|(else)|(if)|(return)|(for)|(while)|(do)|(this)|(true)|(false)|(try)|(catch)|(finally))[^A-Za-z0-9]]]>
+      </pattern>
+      <pattern>
+        <![CDATA[(?<JSString>".*?")]]>
+      </pattern>
+      <pattern>
+        <![CDATA[(?<JSString>'.*?')]]>
+      </pattern>
+      <pattern>
+        <![CDATA[(?<JSComment>//.*$)]]>
+      </pattern>
+      <pattern>
+        <![CDATA[(?<JSComment>/\*.*\*/)]]>
+      </pattern>
+      <pattern tostate="Html" after="0">
+        <![CDATA[(?i)</script>]]>
+      </pattern>
+    </state>
+  </states>
+</language>

@@ -1,0 +1,11 @@
+﻿<ResourceDictionary x:Class="core.ui.Resources"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:icious="clr-namespace:core.ui">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary>
+            
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
