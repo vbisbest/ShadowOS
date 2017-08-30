@@ -10,7 +10,7 @@
     <UserControl.Resources>
        
         <SolidColorBrush x:Key="textColor" Color="#ff262626" />
-        <SolidColorBrush x:Key="textHoverColor" Color="#ff0096d6" />
+        <SolidColorBrush x:Key="textHoverColor" Color="{StaticResource MainColor}" />
         <SolidColorBrush x:Key="hoverFillColor" Color="#ffececec" />
         <SolidColorBrush x:Key="hoverBorderColor" Color="#ffd6d6d6" />
     </UserControl.Resources>

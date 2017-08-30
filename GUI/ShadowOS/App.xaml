@@ -8,6 +8,10 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <!--<Color x:Key="HPBlue">#ff0096d6</Color>-->
+                    <Color x:Key="MainColor">Orange</Color>
+                </ResourceDictionary>
                 <cud:Resources />
                 <cu:Resources />
             </ResourceDictionary.MergedDictionaries>

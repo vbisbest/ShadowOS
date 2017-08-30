@@ -12,8 +12,8 @@
         Height="450" Width="267">
 
     <Window.Resources>
-        
-        <SolidColorBrush x:Key="backgroundColor" Color="#ff0096d6" />
+
+        <SolidColorBrush x:Key="backgroundColor" Color="{StaticResource MainColor}" />
         <SolidColorBrush x:Key="borderColor" Color="White" />
         <SolidColorBrush x:Key="textColor" Color="White" />
     </Window.Resources>

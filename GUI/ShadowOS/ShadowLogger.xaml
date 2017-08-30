@@ -67,10 +67,9 @@
 
         <SolidColorBrush x:Key="sidebarColor" Color="#ffffffff" />
         <SolidColorBrush x:Key="backgroundColor" Color="#fffafafa" />
-        <SolidColorBrush x:Key="splitterColor" Color="#ff0096d6" />
+        <SolidColorBrush x:Key="splitterColor" Color="{StaticResource MainColor}" />
 
-        <Color x:Key="HPBlue">#ff0096d6</Color>
-        <SolidColorBrush x:Key="titleColor" Color="#ff0096d6" />
+        <SolidColorBrush x:Key="titleColor" Color="{StaticResource MainColor}" />
 
         <SolidColorBrush x:Key="titleBarColor" Color="#fffafafa" />
 
@@ -528,7 +527,7 @@
                     <Grid Height="100" Width="400" Background="White">
                         <Grid.Resources>
                             <!-- Particle Styling -->
-                            <SolidColorBrush x:Key = "ParticleColor" Color = "{StaticResource HPBlue}"/>
+                            <SolidColorBrush x:Key = "ParticleColor" Color = "{StaticResource MainColor}"/>
                             <SolidColorBrush x:Key = "ParticleBackgroundColor" Color = "Transparent"/>
                             <system:Double x:Key = "ParticleOpacity">1</system:Double>
                             <system:Double x:Key = "ParticleRadius">5</system:Double>

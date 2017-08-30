@@ -9,9 +9,9 @@
     
     <UserControl.Resources>
         <SolidColorBrush x:Key="unselectedColor" Color="#FFe8e8e8" />
-        <SolidColorBrush x:Key="selectedColor" Color="#ff0096d6" />
+        <SolidColorBrush x:Key="selectedColor" Color="{StaticResource MainColor}" />
         <SolidColorBrush x:Key="selectedTextColor" Color="White" />
-        <SolidColorBrush x:Key="unselectedTextColor" Color="#ff0096d6" />
+        <SolidColorBrush x:Key="unselectedTextColor" Color="{StaticResource MainColor}" />
     </UserControl.Resources>
     
     <Button HorizontalAlignment="Stretch" Height="40" Command="{Binding Command, ElementName=self}">

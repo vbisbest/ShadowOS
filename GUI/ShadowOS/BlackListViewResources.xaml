@@ -4,7 +4,7 @@
     <SolidColorBrush x:Key="headerTextColor" Color="Black" />
 
     <SolidColorBrush x:Key="rowseperatorColor" Color="Transparent" />
-    <SolidColorBrush x:Key="rowevenColor" Color="#ff0096d6" />
+    <SolidColorBrush x:Key="rowevenColor" Color="{StaticResource MainColor}" />
     <SolidColorBrush x:Key="rowoddColor" Color="Transparent" />
     <SolidColorBrush x:Key="rowevenTextColor" Color="Black" />
     <SolidColorBrush x:Key="rowoddTextColor" Color="#FFFFFFFF" />
