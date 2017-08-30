@@ -9,10 +9,10 @@
 
     <UserControl.Resources>
        
-        <SolidColorBrush x:Key="textColor" Color="#ff262626" />
+        <SolidColorBrush x:Key="textColor" Color="{StaticResource MainColorLight}" />
         <SolidColorBrush x:Key="textHoverColor" Color="{StaticResource MainColor}" />
-        <SolidColorBrush x:Key="hoverFillColor" Color="#ffececec" />
-        <SolidColorBrush x:Key="hoverBorderColor" Color="#ffd6d6d6" />
+        <SolidColorBrush x:Key="hoverFillColor" Color="Transparent" />
+        <SolidColorBrush x:Key="hoverBorderColor" Color="Transparent" />
     </UserControl.Resources>
     
     <Button Command="{Binding Command, ElementName=self}">

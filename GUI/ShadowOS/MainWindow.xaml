@@ -10,11 +10,14 @@
         AllowsTransparency="True"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        Background="Transparent" 
         
         xmlns:local="clr-namespace:ShadowOS"
         xmlns:cud="clr-namespace:core.ui.data;assembly=core.ui.data"
         >
+    
+    <Window.Background>
+        <SolidColorBrush Color="{StaticResource BackgroundDark}"></SolidColorBrush>
+    </Window.Background>
     
     <local:ShadowLogger />
     

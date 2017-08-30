@@ -11,6 +11,11 @@
                 <ResourceDictionary>
                     <!--<Color x:Key="HPBlue">#ff0096d6</Color>-->
                     <Color x:Key="MainColor">Orange</Color>
+                    <Color x:Key="MainColorLight">White</Color>
+                    <Color x:Key="BackgroundDark">#ff000000</Color>
+                    <Color x:Key="BackgroundMedium">#ff212121</Color>
+                    <Color x:Key="BackgroundLight">#ff676767</Color>
+                    <Color x:Key="MainColorMedium">#ffFFD700</Color>
                 </ResourceDictionary>
                 <cud:Resources />
                 <cu:Resources />

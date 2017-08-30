@@ -9,9 +9,9 @@
 
     <UserControl.Resources>
        
-        <SolidColorBrush x:Key="menuFill" Color="#FFf3f3f3" />
-        <SolidColorBrush x:Key="menuBorder" Color="#FFe8e8e8" />
-        <SolidColorBrush x:Key="menuText" Color="#FF7f7f7f" />
+        <SolidColorBrush x:Key="menuFill" Color="{StaticResource BackgroundMedium}" />
+        <SolidColorBrush x:Key="menuBorder" Color="{StaticResource BackgroundDark}" />
+        <SolidColorBrush x:Key="menuText" Color="{StaticResource MainColorLight}" />
     </UserControl.Resources>
     
     <Border Background="{StaticResource menuFill}" BorderBrush="{StaticResource menuBorder}" BorderThickness="0,0,0,2">

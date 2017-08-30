@@ -16,9 +16,9 @@
     </UserControl.DataContext>
 
     <UserControl.Resources>
+        <SolidColorBrush x:Key="syntaxBackgroundColor" Color="{StaticResource BackgroundDark}"></SolidColorBrush>
         <SolidColorBrush x:Key="closeColor" Color="#ffc75050" />
         <SolidColorBrush x:Key="windowColor" Color="#ff3665b3" />
-
         <SolidColorBrush x:Key="selectedColor" Color="Orange" />
         <SolidColorBrush x:Key="invisible" Color="Transparent" />
         <SolidColorBrush x:Key="responseColor" Color="Black" />
@@ -65,13 +65,14 @@
         <local:WindowStateHoverConverter x:Key="windowStateHoverConverter" />
         <local:GrayscaleConverter x:Key="grayscaleConverter" />
 
-        <SolidColorBrush x:Key="sidebarColor" Color="#ffffffff" />
-        <SolidColorBrush x:Key="backgroundColor" Color="#fffafafa" />
-        <SolidColorBrush x:Key="splitterColor" Color="{StaticResource MainColor}" />
+        <SolidColorBrush x:Key="sidebarColor" Color="{StaticResource BackgroundDark}" />
+        
+        <SolidColorBrush x:Key="backgroundColor" Color="{StaticResource BackgroundDark}" />
+        <SolidColorBrush x:Key="splitterColor" Color="{StaticResource MainColorLight}" />
 
         <SolidColorBrush x:Key="titleColor" Color="{StaticResource MainColor}" />
 
-        <SolidColorBrush x:Key="titleBarColor" Color="#fffafafa" />
+        <SolidColorBrush x:Key="titleBarColor" Color="{StaticResource BackgroundDark}" />
 
         <Style x:Key="blankRadioButton" TargetType="{x:Type RadioButton}">
             <Style.Setters>
@@ -95,7 +96,7 @@
             <!-- Window -->
             <Grid Background="{StaticResource backgroundColor}" local:WindowHelper.ToggleMaximize="true">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="60" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
@@ -120,9 +121,9 @@
                     <Grid Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Right">
                         <Grid>
                             <Grid.Resources>
-                                <SolidColorBrush x:Key="menuHoverFill" Color="White" />
+                                <SolidColorBrush x:Key="menuHoverFill" Color="{StaticResource BackgroundDark}" />
                                 <SolidColorBrush x:Key="menuHoverBorder" Color="#ffdcdcdc" />
-                                <SolidColorBrush x:Key="menuSelectedFill" Color="White" />
+                                <SolidColorBrush x:Key="menuSelectedFill" Color="{StaticResource BackgroundDark}" />
                                 <SolidColorBrush x:Key="menuSelectedBorder" Color="#FFa8a9aa" />
                             </Grid.Resources>
 
@@ -302,7 +303,7 @@
                             </GridSplitter>
 
                             <Border Grid.Column="2" BorderBrush="{StaticResource invisible}" Background="{StaticResource invisible}" BorderThickness="0,1,0,0">
-                                <cu:SyntaxEditor IsReadyOnly="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SyntaxLanguage="HTTPRequest" Text="{Binding Web.SelectedRequest.Request, Mode=TwoWay}" Margin="5,0,5,0" Padding="0,5,3,3" />
+                                <cu:SyntaxEditor IsReadyOnly="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SyntaxLanguage="HTTPRequest" Text="{Binding Web.SelectedRequest.Request, Mode=TwoWay}" Margin="5,0,5,0" Padding="0,5,3,3" Background="{StaticResource syntaxBackgroundColor}" />
                                 <!--<TextBox FontSize="14" IsReadOnly="True" Text="{Binding Web.SelectedRequest.Request, Mode=OneWay}" Background="{StaticResource invisible}" Foreground="{StaticResource responseColor}" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" BorderThickness="0" BorderBrush="{StaticResource invisible}" Margin="5,0,5,0" Padding="0,5,3,3" TextWrapping="Wrap"/>--> 
                             </Border>
                         </Grid>
@@ -471,9 +472,9 @@
 
                 <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="0" Canvas.Right="0" local:CanvasHelper.Position="{Binding ElementName=popupplacementpoint}">
                     <Grid.Resources>
-                        <SolidColorBrush Color="#FFfefefe" x:Key="menuBG" />
-                        <SolidColorBrush Color="#FFa8a9aa" x:Key="menuHighLight" />
-                        <SolidColorBrush x:Key="menuFill" Color="#FFf3f3f3" />
+                        <SolidColorBrush x:Key="menuBG" Color="{StaticResource BackgroundMedium}" />
+                        <SolidColorBrush x:Key="menuHighLight" Color="{StaticResource BackgroundMedium}" />
+                        <SolidColorBrush x:Key="menuFill" Color="{StaticResource BackgroundMedium}" />
                     </Grid.Resources>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -524,7 +525,7 @@
                         <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="3" Direction="23" />
                     </Border.Effect>
                     
-                    <Grid Height="100" Width="400" Background="White">
+                    <Grid Height="100" Width="400" Background="Transparent">
                         <Grid.Resources>
                             <!-- Particle Styling -->
                             <SolidColorBrush x:Key = "ParticleColor" Color = "{StaticResource MainColor}"/>

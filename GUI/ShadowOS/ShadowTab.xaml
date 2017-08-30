@@ -8,8 +8,8 @@
     
     <UserControl.Resources>
        
-        <SolidColorBrush x:Key="backgroundColor" Color="#FFf3f3f3" />
-        <SolidColorBrush x:Key="tabinfoColor" Color="#FFe8e8e8" />
+        <SolidColorBrush x:Key="backgroundColor" Color="{StaticResource BackgroundMedium}" />
+        <SolidColorBrush x:Key="tabinfoColor" Color="{StaticResource BackgroundLight}" />
         <SolidColorBrush x:Key="unselectedText" Color="#FF7f7f7f" />
         <SolidColorBrush x:Key="selectedText" Color="{StaticResource MainColor}" />
     </UserControl.Resources>

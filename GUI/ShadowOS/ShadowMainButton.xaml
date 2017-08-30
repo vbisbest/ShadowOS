@@ -8,7 +8,7 @@
              x:Name="self">
     
     <UserControl.Resources>
-        <SolidColorBrush x:Key="unselectedColor" Color="#FFe8e8e8" />
+        <SolidColorBrush x:Key="unselectedColor" Color="{StaticResource BackgroundMedium}" />
         <SolidColorBrush x:Key="selectedColor" Color="{StaticResource MainColor}" />
         <SolidColorBrush x:Key="selectedTextColor" Color="White" />
         <SolidColorBrush x:Key="unselectedTextColor" Color="{StaticResource MainColor}" />
