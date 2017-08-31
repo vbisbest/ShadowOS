@@ -16,7 +16,7 @@
     </UserControl.DataContext>
 
     <UserControl.Resources>
-        <SolidColorBrush x:Key="syntaxBackgroundColor" Color="{StaticResource BackgroundDark}"></SolidColorBrush>
+        <SolidColorBrush x:Key="syntaxBackgroundColor" Color="White"></SolidColorBrush>
         <SolidColorBrush x:Key="closeColor" Color="#ffc75050" />
         <SolidColorBrush x:Key="windowColor" Color="#ff3665b3" />
         <SolidColorBrush x:Key="selectedColor" Color="Orange" />
