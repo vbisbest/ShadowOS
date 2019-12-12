@@ -8,8 +8,12 @@ Local Database Access - select, insert, update statements and parameters
 Device Internet Requests - This includes HTTP and HTTPS traffic.  Since this is a custom OS, the HTTPS traffic is captured before encryption
 
 # Emulator
-ShadowOS is runs in an emulator for quick and easy testing of applications.  
+ShadowOS is runs in an emulator for quick and easy testing of applications. The image is based on Android 9.0 Pie.
 
 # Output
 ShadowOS logs all events to the adb console.   Each event will have a tag of "ShadowOS" and the type of event with relevant information.   
 
+![Console Capture](console.png)
+
+Tools can also be created for viewing the data
+![Tool Capture](shadowos.png)
