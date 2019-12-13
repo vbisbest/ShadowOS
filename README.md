@@ -13,7 +13,7 @@ Device Internet Requests - This includes HTTP and HTTPS traffic.  Since this is 
 ShadowOS is runs in an emulator for quick and easy testing of applications. The image is based on Android 9.0 Pie.
 
 # Output
-ShadowOS logs all events to the adb console.   Each event will have a tag of "ShadowOS" and the type of event with relevant information.   
+ShadowOS logs all events to the adb console.   Each event will have a tag of "ShadowOS" and the type of event with relevant information. Below you can see how events where captured while exercising the OWASP GoatDroid application.
 
 ![Console Capture](shadowos2.png)
 
