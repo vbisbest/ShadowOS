@@ -15,7 +15,7 @@ ShadowOS is runs in an emulator for quick and easy testing of applications. The 
 # Output
 ShadowOS logs all events to the adb console.   Each event will have a tag of "ShadowOS" and the type of event with relevant information.   
 
-![Console Capture](console.png)
+![Console Capture](shadowos2.png)
 
 Tools can also be created for viewing the data
 ![Tool Capture](shadowos.png)
