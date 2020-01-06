@@ -534,9 +534,32 @@ class FileOutputStream extends OutputStream
                 return;
             }
             
-            String access = "write";
+            if(filePath.contains("/data/user/0/com.android."))
+            {
+                return;
+            }
+            
+            if(filePath.contains("/data/backup/"))
+            {
+                return;
+            }
+            
+            if(filePath.contains("/sys/"))
+            {
+                return;
+            }
+            
+            org.json.JSONObject shadowData = new org.json.JSONObject();
+            org.json.JSONObject shadowCategory = new org.json.JSONObject();
+            
+            shadowData.put("class", "FileInputStream");
+            shadowData.put("action", "write");
+            shadowData.put("path", filePath);
 
-            java.util.logging.Logger.getLogger("ShadowOS").info("File Access " + access + ": " + filePath);
+            shadowCategory.put("file access", shadowData);
+
+            java.util.logging.Logger.getLogger("ShadowOS").info(shadowCategory.toString());
+
         }
         catch(Exception e)
         {
