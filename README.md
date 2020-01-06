@@ -19,3 +19,16 @@ ShadowOS logs all events to the adb console.   Each event will have a tag of "Sh
 
 Tools can also be created for viewing the data
 ![Tool Capture](shadowos.png)
+
+# Usage
+To implement ShadowOS yourself, you will need to pull down AOSP version 9.0.  Instructions can be found here https://source.android.com/setup/build/building
+
+Once the OS is pulled down, you can overwrite the source files from the "Modified Files" folder.  Here are the paths:
+
+* working_directory/external/okhttp/okhttp/src/main/java/com/squareup/okhttp/internal/http/HttpEngine.java
+* working_directory⁩/libcore/⁨ojluni/src/⁨main/⁨java/⁨java/⁨io⁩/fileoutputstream.java
+* working_directory⁩/libcore/⁨ojluni/src/⁨main/⁨java/⁨java/⁨io⁩/fileinputstream.java
+* working_directory/frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java
+
+Once you have ShadowOS built, you can use logcat to see the captured application events.  Here is a command to filter on ShadowOS events:
+* ./adb logcat *:s "ShadowOS"
