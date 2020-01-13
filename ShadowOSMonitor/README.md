@@ -1,8 +1,7 @@
 # ShadowOS Monitor
 
 A sample application that monitors ShadowOS events.  Code is written in Visual Studio C#.
-
-
+![Tool Capture](shadowos3.png)
 
 Features:
 * Captures all ShadowOS events into a table view
