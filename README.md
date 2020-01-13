@@ -18,7 +18,7 @@ ShadowOS logs all events to the adb console.   Each event will have a tag of "Sh
 ![Console Capture](shadowos2.png)
 
 Tools can also be created for viewing the data
-![Tool Capture](shadowos.png)
+![Tool Capture](shadowos3.png)
 
 # Usage
 To implement ShadowOS yourself, you will need to pull down AOSP version 9.0.  Instructions can be found here https://source.android.com/setup/build/building
