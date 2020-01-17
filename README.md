@@ -34,3 +34,8 @@ Once the OS is pulled down, you can overwrite the source files from the "Modifie
 
 Once you have ShadowOS built, you can use logcat to see the captured application events.  Here is a command to filter on ShadowOS events:
 * ./adb logcat *:s "ShadowOS"
+
+# To-Do
+* Create precompiled ShadowOS image for download.   
+* Look for more areas to capture application activity and behavior
+* Expand on ShadowOS Monitor with more features
