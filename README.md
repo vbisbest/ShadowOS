@@ -1,13 +1,16 @@
 # ShadowOS
 Android application security tool
 
-Testing mobile applications for security vulnerabilities is a difficult job.  There are many target areas to analyze and much of it is manual.   ShadowOS is a tool to help security testers evaluate mobile applications for vulnerabilities.   It is a custom created Android OS that intercepts events and displays them in a console. The captured events are relevant to a mobile pen test and makes in depth app analysis easier.  These application events include:
+Testing mobile applications for security vulnerabilities is a difficult job.  There are many target areas to analyze and much of it is manual.   ShadowOS is a tool to help security testers evaluate mobile applications for vulnerabilities.   It is a custom created Android OS that intercepts events and displays them in a console. The captured events are relevant to a mobile pen test and makes in depth app analysis easier.  
 
-File System - All reads and writes to the file system
+The code modifications are located in the Libraries and Runtime areas of the OS.  This gives ShadowOS the ability to capture information without affecting the application or need for wrappers/injections.
+![Console Capture](Images/aos.png)
 
-Local Database Access - select, insert, update statements and parameters
+ShadowOS captures the following application events:
 
-Device Internet Requests - This includes HTTP and HTTPS traffic.  Since this is a custom OS, the HTTPS traffic is captured before encryption.
+* File System - All reads and writes to the file system
+* Local Database Access - select, insert, update statements and parameters
+* Device Internet Requests - This includes HTTP and HTTPS traffic.  Since this is a custom OS, the HTTPS traffic is captured before encryption.
 
 Another advantage with ShadowOS is that it will defeat any kind of root detection since the OS appears to be a valid Android OS.
 
