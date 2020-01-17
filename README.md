@@ -17,10 +17,10 @@ ShadowOS is runs in an emulator for quick and easy testing of applications. The 
 # Output
 ShadowOS logs all events to the adb console.   Each event will have a tag of "ShadowOS" and the type of event with relevant information. Below you can see how events where captured while exercising the OWASP GoatDroid application.
 
-![Console Capture](shadowos2.png)
+![Console Capture](Images/shadowos2.png)
 
 Tools can also be created for viewing the data.  ShadowOS Monitor is an example.  Double click on events to open files from the device or open a SQLite databse.  See ShadowOSMonitor folder for details.
-![Tool Capture](shadowos3.png)
+![Tool Capture](Images/shadowos3.png)
 
 # Usage
 To implement ShadowOS yourself, you will need to pull down AOSP version 9.0.  Instructions can be found here https://source.android.com/setup/build/building
