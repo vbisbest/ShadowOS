@@ -7,7 +7,9 @@ File System - All reads and writes to the file system
 
 Local Database Access - select, insert, update statements and parameters
 
-Device Internet Requests - This includes HTTP and HTTPS traffic.  Since this is a custom OS, the HTTPS traffic is captured before encryption
+Device Internet Requests - This includes HTTP and HTTPS traffic.  Since this is a custom OS, the HTTPS traffic is captured before encryption.
+
+Another advantage with ShadowOS is that it will defeat any kind of root detection since the OS appears to be a valid Android OS.
 
 # Emulator
 ShadowOS is runs in an emulator for quick and easy testing of applications. The image is based on Android 9.0 Pie.
