@@ -22,7 +22,7 @@ ShadowOS logs all events to the adb console.   Each event will have a tag of "Sh
 
 ![Console Capture](Images/shadowos2.png)
 
-Tools can also be created for viewing the data.  ShadowOS Monitor is an example.  Double click on events to open files from the device or open a SQLite databse.  See ShadowOSMonitor folder for details.
+Tools can also be created for viewing the data.  ShadowOS Monitor is an example.  Double click on events to open files from the device or open a SQLite databse.  See ShadowOSMonitor folder for details. (Here you can see we discovered non-encrypted username and password stored on the device)
 ![Tool Capture](Images/shadowos3.png)
 
 # Usage
